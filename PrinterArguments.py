@@ -80,28 +80,7 @@ default_fill_space = '.'  # references above
 keys = '_i?python'
 
 letter_split = [i.lstrip('\n').rstrip('\n') for i in manual_letters[1:].split('\n\n')]
-
-# matrices = []
-# letter = []
-# for each_letter in letter_split:
-#     line = []
-#     for each_char in each_letter:
-#         if each_char == '\n':
-#             letter.append(line)
-#             line = []
-#         else:
-#             line.append(each_char)
-#     else:
-#         letter.append(line)
-#
-#     matrices.append(letter)
-#     letter = []
-
 matrices = [[list(each_char) for each_char in each_line.split('\n')] for each_line in letter_split]
-# print(matrices)
-# print(matrices_2)
-# print(matrices == matrices_2)
-
 matrix_char_dict = {list(keys)[i]: v for i, v in enumerate(matrices)}
 
 # Configuration
@@ -118,16 +97,15 @@ for i in range(len(list(matrix_char_dict.values())[0])):
         line_to_print += ''.join(matrix_char_dict[each_letter][i])
     line_to_print += match_fill_char * number_of_spaces
     line_to_print = line_to_print.replace(match_fill_char, new_fill_char)
-    ############  IGNORE ABOVE  ############
+    # ignore above
 
     ########################################
     ###        FIX THE LINE BELOW        ###
     ########################################
-    print(line_to_print, end='X')
+    print(line_to_print, end='?')
 
-    ############  IGNORE BELOW  ############
+    # ignore below
     line_to_print = ''
-
 
 
 print()
@@ -154,3 +132,20 @@ print('9\b', '\r\b\b20\b\b1\t\b0', '\061\x35', '22', sep='16 8 526 48 120 22', e
 # foo = 'sp zta hpo'
 ### HELP DECODE THE MESSAGE BY CHANGING THE SEPERATOR ARGUMENT ###
 # print('\nth\t\be', 'sek\bcry\be\t\bt', 'k\bping\b\b\x7A\x7Aa', 'f\bpa\x72\x74y:', 'is', '\157c\t\bt', 'fo\big\t\b\bft\t\bee\x6Eth\bh', sep='sp zta hpo')
+
+
+# matrices = []
+# letter = []
+# for each_letter in letter_split:
+#     line = []
+#     for each_char in each_letter:
+#         if each_char == '\n':
+#             letter.append(line)
+#             line = []
+#         else:
+#             line.append(each_char)
+#     else:
+#         letter.append(line)
+#
+#     matrices.append(letter)
+#     letter = []
