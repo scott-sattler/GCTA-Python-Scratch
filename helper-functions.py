@@ -10,9 +10,6 @@ def id_data_type(id_this: any, data_type: str) -> bool | tuple:
     return clean_id == data_type
 
 
-print("Helper functions successfully loaded!")
-
-
 # List comparison operators in a string, separated by spaces ('ComparisonOperators...')
 def comparison_operator_check(operators: str) -> bool:
     operator_list = "== != > < >= <=".split(' ')
@@ -33,7 +30,7 @@ def comparison_operator_check(operators: str) -> bool:
     return True
 
 
-
+print("Helper functions successfully loaded!")
 
 
 
