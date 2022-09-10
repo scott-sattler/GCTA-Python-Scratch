@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+ * HTML-Sheets-of-Paper (https://github.com/delight-im/HTML-Sheets-of-Paper)
+ * Copyright (c) delight.im (https://www.delight.im/)
+ * Licensed under the MIT License (https://opensource.org/licenses/MIT)
+-->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Emulating real sheets of paper in web documents (using HTML and CSS)">
+		<title>Sheets of Paper</title>
+		<link rel="stylesheet" type="text/css" href="css/sheets-of-paper-a4.css">
+	</head>
+	<body class="document">
+		<div class="page" contenteditable="true">
+			<h1 class="title">Cheat Sheet v0.2</h1>
+			<p style="margin-top: -2em;">press <kbd>alt+f4</kbd> (win) or <kbd>cmd+w</kbd> (mac) to anonymously support cheating</p>
+			<div class="table_info">
+				<h1 class="table">
+					Basic Data Types
+				</h1>
+				<code class="subhead"> str &ensp; int &ensp; float &ensp; bool &ensp; None </code>
+			</div>
+
+			<table class="default_table">
+				<tr class="header">
+					<th style="text-align: center;"> Type </th>
+					<th style="text-align: center;"> Examples </th>
+					<th style="text-align: center;"> Full Name </th>
+				</tr>
+				<tr>
+					<td style="text-align: center;"> <b>str</b> </td>
+					<td style="text-align: center;"> "z", "foo", "Hello!", "3.0", "int" </td>
+					<td style="text-align: center;"> string </td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"> <b>int</b> </td>
+					<td style="text-align: center;"> -11, -2, 0, 3, 101 </td>
+					<td style="text-align: center;"> integer </td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"> <b>float</b> </td>
+					<td style="text-align: center;"> -96.4, -2.0, 0.0, 0.8, 3.0, 101.1  </td>
+					<td style="text-align: center;"> floating-point </td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"> <b>bool</b> </td>
+					<td style="text-align: center;"> True, False </td>
+					<td style="text-align: center;"> boolean </td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"> <b>NoneType</b> </td>
+					<td style="text-align: center;"> None </td>
+					<td style="text-align: center;"> none type </td>
+				</tr>
+			</table>
+
+			<div class="table_info">
+
+				<h1 class="table">
+					Comparison Operators
+				</h1>
+				<code class="subhead"> == &ensp; != &ensp; &gt &ensp; &lt &ensp; &gt= &ensp; &lt= </code>
+				
+			</div>
+
+			
+			<table class="default_table">
+				<tr class="header">
+					<th style="text-align: center;"> Operator </th>
+					<th style="text-align: center;"> Operation </th>
+					<th style="text-align: center;"> Example Usage </th>
+				</tr>
+				<tr>
+					<td style="text-align: center;"> <b>==</b> </td>
+					<td style="text-align: center;"> is equal to<br>(value equality) </td>
+					<td style="text-align: left;">
+						<table style="width: 100%;">
+							<tr></tr>
+							<tr>
+								<td>
+									<code> 1 == 1 </code><br>			  
+									<code> 1 == 2 </code>
+								</td>
+								<td>
+									# evaluates to True <br>
+									# evaluates to False
+								</td>
+							</tr>
+						</table>
+					</td>
+
+				</tr>
+				<tr>
+					<td style="text-align: center;"> <b>!=</b> </td>
+					<td style="text-align: center;"> is not equal to<br>(value inequality) </td>
+					<td style="text-align: left;">
+						<table style="width: 100%;">
+							<tr></tr>
+							<tr>
+								<td>
+									<code> 1 != 2 </code><br>			  
+									<code> 1 != 1 </code>
+								</td>
+								<td>
+									# evaluates to True <br>
+									# evaluates to False
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"> <b>&gt</b> </td>
+					<td style="text-align: center;"> greater than </td>
+					<td style="text-align: left;">
+						<table style="width: 100%;">
+							<tr></tr>
+							<tr>
+								<td>
+									<code> 2 &gt 1 </code><br>	
+									<code> 2 &gt 2 </code><br>	
+									<code> 1 &gt 2 </code>
+								</td>
+								<td>
+									# evaluates to True <br>
+									# evaluates to False <br>
+									# evaluates to False
+								</td>
+							</tr>
+							<tr></tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"> <b>&lt</b> </td>
+					<td style="text-align: center;"> less than </td>
+					<td style="text-align: left;"><code> 1 &lt 2  # evaluates to True </code><br>
+												  <code> 2 &lt 2  # evaluates to False </code><br>
+												  <code> 2 &lt 1  # evaluates to False </code></td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"> <b>&gt=</b> </td>
+					<td style="text-align: center;"> greater than or equal </td>
+					<td style="text-align: left;"><code> 2 &gt= 1  # evaluates to True </code><br>
+												  <code> 1 &gt= 1  # evaluates to True </code><br>
+												  <code> 0 &gt= 1  # evaluates to False </code></td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"> <b>&lt=</b> </td>
+					<td style="text-align: center;"> less than or equal </td>
+					<td style="text-align: left;"><code> 0 &lt= 1  # evaluates to True </code><br>
+												  <code> 1 &lt= 1  # evaluates to True </code><br>
+												  <code> 2 &lt= 1  # evaluates to False </code></td>
+				</tr>
+			</table>
+		</div>
+		<div class="page" contenteditable="true">
+			asdf
+		</div>
+
+
+
+		<script type="text/javascript">
+		// window.print();
+
+		var Config = {};
+		Config.pixelsPerInch = 96;
+		Config.pageHeightInCentimeter = 29.7; // must match 'min-height' from 'css/sheets-of-paper-*.css' being used
+		Config.pageMarginBottomInCentimeter = 2; // must match 'padding-bottom' and 'margin-bottom' from 'css/sheets-of-paper-*.css' being used
+
+		window.addEventListener("DOMContentLoaded", function () {
+			applyPageBreaks();
+		});
+
+		function applyPageBreaks() {
+			applyManualPageBreaks();
+			applyAutomaticPageBreaks(Config.pixelsPerInch, Config.pageHeightInCentimeter, Config.pageMarginBottomInCentimeter);
+
+			document.querySelectorAll(".document .page").forEach(function (element) {
+				if (!element.classList.contains("has-events")) {
+					element.addEventListener("blur", function () {
+						applyPageBreaks();
+					});
+
+					element.classList.add("has-events");
+				}
+			});
+		}
+
+		/* Applies any manual page breaks in preview mode (screen, non-print) where CSS Paged Media is not fully supported */
+		function applyManualPageBreaks() {
+			var docs, pages, snippets;
+			docs = document.querySelectorAll(".document");
+
+			for (var d = docs.length - 1; d >= 0; d--) {
+				pages = docs[d].querySelectorAll(".page");
+
+				for (var p = pages.length - 1; p >= 0; p--) {
+					snippets = pages[p].children;
+
+					for (var s = snippets.length - 1; s >= 0; s--) {
+						if (snippets[s].classList.contains("page-break")) {
+							pages[p].insertAdjacentHTML("afterend", "<div class=\"page\" contenteditable=\"true\"></div>");
+
+							for (var n = snippets.length - 1; n > s; n--) {
+								pages[p].nextElementSibling.insertBefore(snippets[n], pages[p].nextElementSibling.firstChild);
+							}
+
+							snippets[s].remove();
+						}
+					}
+				}
+			}
+		}
+
+		/* Applies (where necessary) automatic page breaks in preview mode (screen, non-print) where CSS Paged Media is not fully supported */
+		function applyAutomaticPageBreaks(pixelsPerInch, pageHeightInCentimeter, pageMarginBottomInCentimeter) {
+			var inchPerCentimeter = 0.393701;
+			var pageHeightInInch = pageHeightInCentimeter * inchPerCentimeter;
+			var pageHeightInPixels = Math.ceil(pageHeightInInch * pixelsPerInch);
+			var pageMarginBottomInInch = pageMarginBottomInCentimeter * inchPerCentimeter;
+			var pageMarginBottomInPixels = Math.ceil(pageMarginBottomInInch * pixelsPerInch);
+			var docs, pages, snippets, pageCoords, snippetCoords;
+			docs = document.querySelectorAll(".document");
+
+			for (var d = docs.length - 1; d >= 0; d--) {
+				pages = docs[d].querySelectorAll(".page");
+
+				for (var p = 0; p < pages.length; p++) {
+					if (pages[p].clientHeight > pageHeightInPixels) {
+						pages[p].insertAdjacentHTML("afterend", "<div class=\"page\" contenteditable=\"true\"></div>");
+						pageCoords = pages[p].getBoundingClientRect();
+						snippets = pages[p].querySelectorAll("h1, h2, h3, h4, h5, h6, p, ul, ol");
+
+						for (var s = snippets.length - 1; s >= 0; s--) {
+							snippetCoords = snippets[s].getBoundingClientRect();
+
+							if ((snippetCoords.bottom - pageCoords.top + pageMarginBottomInPixels) > pageHeightInPixels) {
+								pages[p].nextElementSibling.insertBefore(snippets[s], pages[p].nextElementSibling.firstChild);
+							}
+						}
+
+						pages = docs[d].querySelectorAll(".page");
+					}
+				}
+			}
+		}
+		</script>
+	</body>
+</html>
