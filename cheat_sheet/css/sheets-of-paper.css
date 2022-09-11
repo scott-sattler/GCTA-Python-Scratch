@@ -152,7 +152,8 @@ table {
 
 /* dark mode */
 html {
-	/* filter: invert(95%); */
+	filter: invert(95%);
+	/* filter: invert(0%); */
 }
 
 
@@ -197,7 +198,8 @@ h1.table{
 
 /* code summary under headers */
 code {
-	font-size: 18px;
+	font-size: 16px;
+	font-family: monospace, monospace;
 }
 
 	code.subhead {
@@ -208,7 +210,7 @@ code {
 
 table.default_table {
     font-family: Consolas, monaco, monospace;
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 0;
 	width: 100%;
     
@@ -243,9 +245,21 @@ table tr:hover code {
     /* background-color: inherit !important /* background-color: rgba(66, 165, 245, 0.2) !important;  /* hardcoded default */ 
 }
 
-/* default override to fix hover coloring issue */
-code {
-/*     padding: 0px; */
+/* BUG? seems to not eliminate all space */
+.no_space_table {
+    border: none;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	/* flex-direction: column; */
+
 }
 
+.flex_test {
+	display: flexbox;
+	justify-content: space-around;
 
+}
