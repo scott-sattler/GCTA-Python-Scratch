@@ -149,13 +149,6 @@ table {
     
 } */
 
-/* dark mode */
-html {
-	filter: invert(95%);
-	/* filter: invert(0%); */
-}
-
-
 h2 {color: inherit}
 h3 {color: inherit}
 h4 {color: red}
@@ -178,7 +171,7 @@ div.text_cell_render {
 }
 
 div.table_info {
-	margin-top: 1em;
+	margin-top: 3em;
 	margin-bottom: .5em;
 }
 
@@ -261,4 +254,76 @@ table tr:hover code {
 	display: flexbox;
 	justify-content: space-around;
 
+}
+
+
+
+/* TODO: fix --translate and make dynamic (input:checked + .slider:before ) */
+:root {
+	--red: #b00;
+	--blue: #00b;
+	--fullwidth: 100%;
+
+	/* toggle */
+	--slider_x: 78px;
+	--slider_y: 34px;
+	/* --translate: 26px; */
+	--translate: 39px;
+	--slider_pad: 4px;
+  }
+
+
+/*** slider toggle ***/
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: var(--slider_x);
+	height: var(--slider_y);
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+  
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 30px;
+	left: var(--slider_pad);
+	bottom: var(--slider_pad);
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider {
+	background-color: #787878;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #787878;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(var(--translate));
+	-ms-transform: translateX(var(--translate));
+	transform: translateX(var(--translate));
 }

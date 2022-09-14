@@ -1,3 +1,24 @@
+
+document.addEventListener('DOMContentLoaded', function () {
+    var toggle = document.querySelector('input[type="checkbox"]');
+  
+    toggle.addEventListener('change', function () {
+      if (toggle.checked) {
+        // console.log('Checked');
+        document.querySelector('html').style.filter = 'invert(95%)'
+      } else {
+        // console.log('Not checked');
+        document.querySelector('html').style.filter = 'invert(0%)'
+      }
+    });
+  });
+
+
+/******************************************************************************/
+/******************************************************************************/
+/******************************************************************************/
+
+
 // window.print();
 
 var Config = {};
