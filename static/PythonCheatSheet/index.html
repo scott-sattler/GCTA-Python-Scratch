@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<!-- todo: refactor using flex -->
+
 <html lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -80,73 +82,123 @@
 				<h1 class="table"> Arithmetic Operators </h1>
 				<code class="subhead"> + &ensp; - &ensp; * &ensp; / &ensp; ** &ensp; // &ensp; % </code>
 			</div>
-
-			Note: Addition and subtraction are either binary or unary operators; The others are binary.
-
 			<table class="default_table">
 				<tr class="header">
 					<th style="text-align: center;"> Operator </th>
 					<th style="text-align: center;"> Name </th>
+					<th style="text-align: center;"> Unary </th>
+					<th style="text-align: center;"> Binary </th>
 					<th style="text-align: center;"> Example </th>
 				</tr>
 				<tr>
 					<td style="text-align: center;"> <b>+</b> </td>
 					<td style="text-align: center;"> addition </td>
-					<td style="text-align: center;">
-						<!-- todo: fix -->
-						<table style="width: 100%; border-spacing: 0px !important;"> 
+					<td style="text-align: center;"> x </td>
+					<td style="text-align: center;"> x </td>
+					<td style="text-align: left;">
+						<table class="no_border sub_table1"> 
 							<tr>
-								<td><code> 4 + 2 </code></td>
-								<td># evaluates to 6</td>
+								<td style="text-align: right;"><code> &ensp;1 + 2 </code></td>
+								<td> &ensp; </td>
+								<td> # evaluates to 3 </td>
 							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"> <b>-</b> </td>
+					<td style="text-align: center;"> subtraction </td>
+					<td style="text-align: center;"> x </td>
+					<td style="text-align: center;"> x </td>
+					<td style="text-align: left;">
+						<table class="no_border sub_table1"> 
 							<tr>
-								<td><code> -3 + -1 </code></td>
-								<td># evaluates to -4</td>
+								<td style="text-align: right;"><code> &ensp;2 - 1 </code></td>
+								<td> &ensp; </td>
+								<td> # evaluates to 1 </td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"> <b>*</b> </td>
+					<td style="text-align: center;"> multiplication </td>
+					<td style="text-align: center;">  </td>
+					<td style="text-align: center;"> x </td>
+					<td style="text-align: center;"> 
+						<table class="no_border sub_table1"> 
+							<tr>
+								<td style="text-align: right;"><code> &ensp;2 * 3 </code></td>
+								<td> &ensp; </td>
+								<td> # evaluates to 6 </td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"> <b>/</b> </td>
+					<td style="text-align: center;"> division </td>
+					<td style="text-align: center;">  </td>
+					<td style="text-align: center;"> x </td>
+					<td style="text-align: center;"> 
+						<table class="no_border sub_table1"> 
+							<tr>
+								<td style="text-align: right;"><code> &ensp;4 / 2 </code></td>
+								<td> &ensp; </td>
+								<td> # evaluates to 2 </td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;"> <b>**</b> </td>
+					<td style="text-align: center;"> exponentiation </td>
+					<td style="text-align: center;">  </td>
+					<td style="text-align: center;"> x </td>
+					<td style="text-align: center;"> 
+						<table class="no_border sub_table1"> 
+							<tr>
+								<td style="text-align: right;"><code> 3 ** 2 </code></td>
+								<td> &ensp; </td>
+								<td> # evaluates to 9 </td>
 							</tr>
 						</table>
 					</td>
 
 				</tr>
 				<tr>
-					<td style="text-align: center;"> <b>-</b> </td>
-					<td style="text-align: center;"> subtraction </td>
-					<td style="text-align: center;"> <code> 4 - 1&ensp; &ensp;# evaluates to 3 </code></td>
-
-				</tr>
-				<tr>
-					<td style="text-align: center;"> <b>*</b> </td>
-					<td style="text-align: center;"> multiplication </td>
-					<td style="text-align: center;"> <code> 3 * 3&ensp; &ensp;# evaluates to 9 </code></td>
-
-				</tr>
-				<tr>
-					<td style="text-align: center;"> <b>/</b> </td>
-					<td style="text-align: center;"> division </td>
-					<td style="text-align: center;"> <code> 4 / 2&ensp; &ensp;# evaluates to 2 </code></td>
-
-				</tr>
-				<tr>
-					<td style="text-align: center;"> <b>**</b> </td>
-					<td style="text-align: center;"> exponentiation </td>
-					<td style="text-align: center;"> <code> 3 ** 2 &ensp;# evaluates to 9 </code></td>
-
-				</tr>
-				<tr>
 					<td style="text-align: center;"> <b>//</b> </td>
 					<td style="text-align: center;"> floor division </td>
-					<td style="text-align: center;"> <code> 3 // 2 &ensp;# evaluates to 1 </code><br>
-													 <code> 3 // 2 &ensp;# evaluates to 1 </code></td>
+					<td style="text-align: center;">  </td>
+					<td style="text-align: center;"> x </td>
+					<td style="text-align: center;"> 
+						<table class="no_border sub_table1"> 
+							<tr>
+								<td style="text-align: right;"><code> 5 // 2 </code></td>
+								<td> &ensp; </td>
+								<td> # evaluates to 2 </td>
+							</tr>
+						</table>
+					</td>
 
 				</tr>
 				<tr>
 					<td style="text-align: center;"> <b>%</b> </td>
 					<td style="text-align: center;"> modulo </td>
-					<td style="text-align: center;"> <code> 3 % 4&ensp; &ensp;# evaluates to 3 </code><br>
-													 <code> 3 % 4&ensp; &ensp;# evaluates to 3 </code></td>
-
+					<td style="text-align: center;">  </td>
+					<td style="text-align: center;"> x </td>
+					<td style="text-align: center;"> 
+						<table class="no_border sub_table1"> 
+							<tr>
+								<td style="text-align: right;"><code> &ensp;5 % 3 </code></td>
+								<td> &ensp; </td>
+								<td> # evaluates to 2 </td>
+							</tr>
+						</table>
+					</td>
 				</tr>
-
 			</table>
+
 
 			<!-- Comparison Operators -->
 			<div class="table_info">
