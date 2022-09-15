@@ -26,10 +26,10 @@
 					</td>
 					<!-- Dark/Light Button -->
 					<td style="vertical-align: top; width: 0%">
-						<!-- <label for="toggle">Light/Dark</label> -->
+						<label for="cbox">Light/Dark</label>
 						<!-- Rectangular switch -->
 						<label class="switch">
-							<input type="checkbox">
+							<input id="cbox" type="checkbox">
 							<span class="slider"></span>
 						</label>
 					</td>
@@ -198,7 +198,9 @@
 					</td>
 				</tr>
 			</table>
+		</div>
 
+		<div class="page" contenteditable="false">
 
 			<!-- Comparison Operators -->
 			<div class="table_info">
@@ -254,92 +256,97 @@
 												  	<code>&nbsp; 2 &lt= 1  &nbsp;# evaluates to False </code></td>
 				</tr>
 			</table>
-		</div>
 
+
+
+						<!-- Logical Operators -->
+						<div class="table_info">
+							<h1 class="table"> Logical Operators </h1>
+							<code class="subhead"> and &ensp; or &ensp; not </code>
+						</div>
+			
+						<table class="default_table">
+							<tr class="header">
+								<th style="text-align: center;"> Operator </th>
+								<th style="text-align: center;"> Operation<br>Description </th>
+								<th style="text-align: center;"> Example Usage </th>
+							</tr>
+							<tr>
+								<td style="text-align: center;"> <b>and</b> </td>
+								<td style="text-align: center;"> both are True </td>
+								<td style="text-align: left;">
+									<table class="no_space_table">
+										<tr></tr>
+										<tr>
+											<td>
+												True &nbsp;and True<br>
+												True &nbsp;and False<br>
+												False and True<br>
+												False and False<br>
+											</td>
+											<td>&nbsp;&nbsp;</td>
+											<td>
+												# evaluates to True<br>
+												# evaluates to False<br>
+												# evaluates to False<br>
+												# evaluates to False<br>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"> <b>or</b> </td>
+								<td style="text-align: center;"> at least one<br>is True </td>
+								<td style="text-align: left;">
+									<table class="no_space_table">
+										<tr></tr>
+										<tr>
+											<td>
+												True &nbsp;or True<br>
+												True &nbsp;or False<br>
+												False or True<br>
+												False or False<br>
+											</td>
+											<td>&nbsp;&nbsp;&nbsp;</td>
+											<td>
+												# evaluates to True<br>
+												# evaluates to True<br>
+												# evaluates to True<br>
+												# evaluates to False<br>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;"> <b>not</b> </td>
+								<td style="text-align: center;"> inverse<br>(opposite) </td>
+								<td style="text-align: left;">
+									<table class="no_space_table">
+										<tr></tr>
+										<tr>
+											<td>
+												not True<br>
+												not False<br>
+											</td>
+											<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+											<td>
+												# evaluates to False<br>
+												# evaluates to True<br>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+
+			
+		</div>
 
 		<div class="page" contenteditable="false">
 
-			<!-- Logical Operators -->
-			<div class="table_info">
-				<h1 class="table"> Logical Operators </h1>
-				<code class="subhead"> and &ensp; or &ensp; not </code>
-			</div>
 
-			<table class="default_table">
-				<tr class="header">
-					<th style="text-align: center;"> Operator </th>
-					<th style="text-align: center;"> Operation<br>Description </th>
-					<th style="text-align: center;"> Example Usage </th>
-				</tr>
-				<tr>
-					<td style="text-align: center;"> <b>and</b> </td>
-					<td style="text-align: center;"> both are True </td>
-					<td style="text-align: left;">
-						<table class="no_space_table">
-							<tr></tr>
-							<tr>
-								<td>
-									True &nbsp;and True<br>
-									True &nbsp;and False<br>
-									False and True<br>
-									False and False<br>
-								</td>
-								<td>&nbsp;&nbsp;</td>
-								<td>
-									# evaluates to True<br>
-									# evaluates to False<br>
-									# evaluates to False<br>
-									# evaluates to False<br>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-				<tr>
-					<td style="text-align: center;"> <b>or</b> </td>
-					<td style="text-align: center;"> at least one<br>is True </td>
-					<td style="text-align: left;">
-						<table class="no_space_table">
-							<tr></tr>
-							<tr>
-								<td>
-									True &nbsp;or True<br>
-									True &nbsp;or False<br>
-									False or True<br>
-									False or False<br>
-								</td>
-								<td>&nbsp;&nbsp;&nbsp;</td>
-								<td>
-									# evaluates to True<br>
-									# evaluates to True<br>
-									# evaluates to True<br>
-									# evaluates to False<br>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-				<tr>
-					<td style="text-align: center;"> <b>not</b> </td>
-					<td style="text-align: center;"> inverse<br>(opposite) </td>
-					<td style="text-align: left;">
-						<table class="no_space_table">
-							<tr></tr>
-							<tr>
-								<td>
-									not True<br>
-									not False<br>
-								</td>
-								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-								<td>
-									# evaluates to False<br>
-									# evaluates to True<br>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-			<table>
 
 			<!-- Special Operators -->
 			<div class="table_info">
